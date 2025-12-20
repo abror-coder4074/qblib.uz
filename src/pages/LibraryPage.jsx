@@ -1,9 +1,20 @@
 import React from 'react';
-import { Search, Monitor, Smartphone, Globe } from 'lucide-react';
+import { Search, Monitor, Smartphone, Globe, CreditCard, Clock, RotateCcw, VolumeX, BookOpen, UtensilsCrossed, ShieldCheck } from 'lucide-react';
 
 const LibraryPage = ({ t }) => {
+    // Qoidalar uchun ikonkalarni tartiblash
+    const ruleIcons = [
+        <CreditCard className="w-8 h-8" />,
+        <Clock className="w-8 h-8" />,
+        <RotateCcw className="w-8 h-8" />,
+        <VolumeX className="w-8 h-8" />,
+        <BookOpen className="w-8 h-8" />,
+        <UtensilsCrossed className="w-8 h-8" />,
+    ];
+
     return (
         <div className="pt-16 min-h-screen">
+            {/* Hero Section */}
             <div className="relative h-[550px] flex items-center justify-center text-white">
                 <div
                     className="absolute inset-0 bg-cover bg-center z-0"
@@ -33,6 +44,7 @@ const LibraryPage = ({ t }) => {
                 </div>
             </div>
 
+            {/* Services Cards */}
             <div className="bg-gray-50 py-24">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid md:grid-cols-3 gap-8">
@@ -63,7 +75,8 @@ const LibraryPage = ({ t }) => {
                 </div>
             </div>
 
-            <div className="py-20 bg-white">
+            {/* Stats Section */}
+            <div className="py-20 bg-white border-b border-gray-100">
                 <div className="max-w-6xl mx-auto px-6 text-center">
                     <h2 className="text-3xl font-bold mb-16 text-[#001F3F]">Kutubxonamiz raqamlarda</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
@@ -71,6 +84,39 @@ const LibraryPage = ({ t }) => {
                             <div key={idx} className="flex flex-col items-center">
                                 <span className="text-5xl font-extrabold text-[#BD1C23] mb-3">{stat.n}</span>
                                 <span className="text-gray-500 font-medium tracking-wide">{stat.t}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* KUTUBXONA QOIDALARI BO'LIMI - YANGI QO'SHILDI */}
+            <div className="py-24 bg-[#F8F9FB]">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="flex flex-col items-center text-center mb-16">
+                        <div className="bg-[#BD1C23]/10 p-4 rounded-full mb-4">
+                            <ShieldCheck className="w-10 h-10 text-[#BD1C23]" />
+                        </div>
+                        <h2 className="text-4xl font-bold text-[#001F3F] mb-4">
+                            {t.rulesTitle}
+                        </h2>
+                        <p className="text-gray-500 max-w-2xl mx-auto italic">
+                            {t.rulesSubtitle}
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {[t.rule1, t.rule2, t.rule3, t.rule4, t.rule5, t.rule6].map((ruleText, index) => (
+                            <div
+                                key={index}
+                                className="bg-white p-8 rounded-[2rem] shadow-sm border border-gray-100 flex items-center gap-6 hover:shadow-md transition-all group"
+                            >
+                                <div className="bg-red-50 p-4 rounded-2xl text-[#BD1C23] group-hover:bg-[#BD1C23] group-hover:text-white transition-all duration-300">
+                                    {ruleIcons[index]}
+                                </div>
+                                <p className="text-[#001F3F] font-bold text-lg leading-tight">
+                                    {ruleText}
+                                </p>
                             </div>
                         ))}
                     </div>

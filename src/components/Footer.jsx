@@ -32,8 +32,8 @@ const Footer = ({ t }) => {
           <ul className="space-y-4 text-gray-400 text-sm mb-6">
             <li>{t.addressDesc}</li>
             <li className="hover:text-white"><a href="tel:+998911137035">+998 91 113 70 35</a></li>
-            <li className="hover:text-white"><a href="mailto:info@quvakutubxona.uz">info@quvakutubxona.uz</a></li>
-            <li className="hover:text-white"><a href="https://t.me/quvakutubxona" target="_blank">t.me/quvakutubxona</a></li>
+            <li className="hover:text-white"><a href="mailto:info@quvakutubxona.uz">info@qorovulbozorkutubxona.uz</a></li>
+            <li className="hover:text-white"><a href="https://t.me/quvakutubxona" target="_blank">t.me/qorovulbozorkutubxona</a></li>
           </ul>
           
           <h4 className="text-lg font-bold mb-3">{t.workTimeTitle}</h4>
@@ -64,7 +64,7 @@ const Footer = ({ t }) => {
       <div className="max-w-7xl mx-auto pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-xs">
         <p>© 2025 {t.copyright}</p>
         <div className="flex gap-6">
-          <a href="#" className="hover:text-white transition-colors"><Facebook size={20} /></a>
+          <a href="https://www.facebook.com/QorovulbozorLib21" className="hover:text-white transition-colors"><Facebook size={20} /></a>
           <a href="#" className="hover:text-white transition-colors"><Send size={20} /></a>
           <a href="#" className="hover:text-white transition-colors"><Instagram size={20} /></a>
         </div>

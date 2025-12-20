@@ -83,7 +83,7 @@ const About = ({ t }) => {
                             </div>
                             <div>
                                 <h4 className="font-bold text-[#002B49] mb-1.5 text-lg">Email</h4>
-                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">info@quvakutubxona.uz</p>
+                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">info@qoravulbozorkutubxona.uz</p>
                             </div>
                         </a>
 
@@ -93,7 +93,7 @@ const About = ({ t }) => {
                             </div>
                             <div>
                                 <h4 className="font-bold text-[#002B49] mb-1.5 text-lg">Telegram</h4>
-                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">t.me/quvakutubxona</p>
+                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">t.me/qoravulbozorkutubxona</p>
                             </div>
                         </a>
                     </div>
