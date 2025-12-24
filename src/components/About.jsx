@@ -77,23 +77,23 @@ const About = ({ t }) => {
                             </div>
                         </a>
 
-                        <a href="mailto:info@quvakutubxona.uz" className="flex items-start gap-5 group">
+                        <a href="mailto:info@qb.buxakm.uz" className="flex items-start gap-5 group">
                             <div className="bg-[#BD1C23]/10 p-3.5 rounded-full text-[#BD1C23] group-hover:bg-[#BD1C23] group-hover:text-white transition-all">
                                 <Mail size={26} />
                             </div>
                             <div>
                                 <h4 className="font-bold text-[#002B49] mb-1.5 text-lg">Email</h4>
-                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">info@qoravulbozorkutubxona.uz</p>
+                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">info@qb.buxakm.uz</p>
                             </div>
                         </a>
 
-                        <a href="https://t.me/quvakutubxona" target="_blank" className="flex items-start gap-5 group">
+                        <a href="https://t.me/qblibuz" target="_blank" className="flex items-start gap-5 group">
                             <div className="bg-[#BD1C23]/10 p-3.5 rounded-full text-[#BD1C23] group-hover:bg-[#BD1C23] group-hover:text-white transition-all">
                                 <Send size={26} />
                             </div>
                             <div>
                                 <h4 className="font-bold text-[#002B49] mb-1.5 text-lg">Telegram</h4>
-                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">t.me/qoravulbozorkutubxona</p>
+                                <p className="text-gray-500 text-[14px] group-hover:text-[#BD1C23] transition-colors">t.me/qbibuz         </p>
                             </div>
                         </a>
                     </div>
